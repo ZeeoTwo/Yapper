@@ -1,3 +1,5 @@
+import sys 
+sys.path.append('lib')
 from pytube import YouTube
 from moviepy.editor import VideoFileClip
 import os
