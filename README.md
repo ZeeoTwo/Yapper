@@ -9,6 +9,6 @@ Dios mio que hago 😫 📞📞📞
 Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 
 # Install libraries
-```cd YtSynth```
-```mkdir lib```
+```cd YtSynth```\
+```mkdir lib```\
 ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
