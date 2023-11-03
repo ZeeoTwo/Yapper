@@ -36,6 +36,9 @@ class VideoNoteCreatorApp:
         self.file_format_combobox = ttk.Combobox(root, values=["docx", "pdf", "txt", "md"])
         self.file_format_combobox.set("docx")
 
+        self.note_directory_label = ttk.Label(root, text="Select note directory:")
+        self.note_directory_button = ttk.Button(root, text="Select", command=self.select_note_directory)
+
         self.process_button = ttk.Button(root, text="Process Video", command=self.download_and_process)
         self.yt_link_entry.bind("<KeyRelease>", self.update_state)
 
@@ -50,7 +53,10 @@ class VideoNoteCreatorApp:
         self.file_format_label.grid(row=3, column=0, padx=10, pady=10)
         self.file_format_combobox.grid(row=3, column=1, padx=10, pady=10)
 
-        self.process_button.grid(row=4, column=0, columnspan=3, padx=10, pady=10)
+        self.note_directory_label.grid(row=4, column=0, padx=10, pady=10)
+        self.note_directory_button.grid(row=4, column=1, padx=10, pady=10)
+
+        self.process_button.grid(row=5, column=0, columnspan=3, padx=10, pady=10)
         
     def update_state(self,event):
         if self.yt_link_entry.get():
@@ -135,16 +141,19 @@ class VideoNoteCreatorApp:
         if file_format == "docx":
             doc = Document()
             doc.add_paragraph(note)
-            doc.save(file_name + ".docx")
+            file_path = os.path.join(self.note_directory_button, file_name + ".docx")
+            doc.save(file_path)
         if file_format == "pdf":
             doc = Document()
             doc.add_paragraph(note)
-            doc.save(file_name + ".docx")
-            convert(file_name + ".docx")
-            if os.path.exists(file_name + ".docx"):
-                os.remove(file_name + ".docx")
+            file_path = os.path.join(self.note_directory_button, file_name + ".docx")
+            doc.save(file_path)
+            convert(file_path)
+            if os.path.exists(file_path):
+                os.remove(file_path)
         if file_format == "txt":
-            with open(file_name + ".txt", "w") as file_obj:
+            file_path = os.path.join(self.note_directory_button, file_name + ".txt")
+            with open(file_path, "w") as file_obj:
                 file_obj.write(note)
 
     def extract_audio(self,video_file, audio_url):
@@ -173,6 +182,9 @@ class VideoNoteCreatorApp:
         self.upload_button.config(state="disabled")
         self.yt_link_entry.config(state ="disabled")
 
+    def select_note_directory(self):
+        self.note_directory_button = filedialog.askdirectory(
+        title="Select a directory Folder")
 
 def main():
     app = tk.Tk()
