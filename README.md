@@ -19,8 +19,8 @@ Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 ㅤ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 
-> ### Installation
 > [!IMPORTANT]
+> ### Installation
 > 1. ```cd YtSynth```
 > 2. ```mkdir lib```
 > 3. ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
