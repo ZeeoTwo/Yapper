@@ -1,4 +1,4 @@
-<h1> Yapper </h1>
+<h1 style="text-align: center;" > Yapper </h1>
 
 El que quiera perder el tiempo- 📞📞📞📞
 Salsa y picante🤑
