@@ -20,7 +20,8 @@ Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 
 
 ### Installation
- 1. ```cd YtSynth```
- 2. ```mkdir lib```
- 3. ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
+[!IMPORTANT]
+> 1. ```cd YtSynth```
+> 2. ```mkdir lib```
+> 3. ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
 
