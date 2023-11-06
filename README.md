@@ -5,7 +5,7 @@
 <br/>
 
 ### Descripción
-El que quiera perder el tiempo- 📞📞📞📞
+> El que quiera perder el tiempo- 📞📞📞📞
 Salsa y picante🤑
 DIO MÍO QUE HAGO 📳📳📳📞📞📞
 Otra ve 😌 salsa 😃 y picante 😉 y no fuimo 😼
@@ -23,3 +23,4 @@ Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
  1. ```cd YtSynth```
  2. ```mkdir lib```
  3. ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
+
