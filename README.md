@@ -19,7 +19,7 @@ Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 ㅤ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 
-### Installation
+> ### Installation
 > [!IMPORTANT]
 > 1. ```cd YtSynth```
 > 2. ```mkdir lib```
