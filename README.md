@@ -8,7 +8,7 @@ Salam Alaikum Walaikum Assalam...
 Dios mio que hago 😫 📞📞📞
 Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 
-# Install libraries
+### Used Libraries
 ```cd YtSynth```\
 ```mkdir lib```\
 ```pip install pytube moviepy assemblyai pywin32 openai python-docx docx2pdf -t lib --no-user```
