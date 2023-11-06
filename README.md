@@ -9,7 +9,7 @@ Dios mio que hago 😫 📞📞📞
 Dioj mío que seso 🗣️🗣️🗣️🔥🔥🔥💥
 
 ### Built With
-   ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ㅤ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 
 ### Installation
